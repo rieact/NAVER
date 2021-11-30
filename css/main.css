@@ -1,0 +1,120 @@
+/* HEADER */
+.header .main-header {
+  border-bottom: 1px solid #e4e8eb;
+}
+.header .inner {
+  width: 1130px;
+  height: 160px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* LOGO */
+.header .logo {
+  position: absolute;
+  height: 52px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+.header .logo a {
+  display: block;
+  width: 222px;
+  height: 52px;
+  background-image: url(/images/naver.png);
+  background-size: 444px 439px;
+  background-position: 0 -158px;
+  background-repeat: no-repeat;
+}
+
+/* SEARCH */
+.header .search {
+  position: absolute;
+  width: 582px;
+  height: 52px;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 250px;
+  border: 2px solid #19ce60;
+}
+.header .search input {
+  border: 0;
+  width: 444px;
+  height: 24px;
+  padding: 13px 15px;
+  margin: 1px;
+  background-color: #fff;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  font-weight: 700;
+  outline: 0;
+}
+.header .search .search-btn {
+  position: absolute;
+  top: -1px;
+  bottom: 0;
+  right: 0;
+  width: 56px;
+  background-color: #19ce60;
+  cursor: pointer;
+  border: 0;
+  border-radius: 0 2px 2px 0;
+}
+.header .search .search-btn .search-icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background-image: url(/images/naver.png);
+  background-size: 444px 439px;
+  background-position: -420px -208px;
+  background-repeat: no-repeat;
+}
+
+
+.header .service-menu {
+  position: absolute;
+  top: 12px;
+  right: 27px;
+  display: flex;
+  align-items: flex-start;
+  font-size: 11px;
+}
+.header .service-menu li:first-child::after {
+  content: "";
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background-image: url(/images/naver.png);
+  background-size: 444px 439px;
+  background-position: -373px -352px;
+  background-repeat: no-repeat;
+  margin: -3px 0 0 3px;
+}
+.header .service-menu li.icon-jrnaver,
+.header .service-menu li.icon-happybin {
+  background-image: url(/images/naver.png);
+  background-size: 444px 439px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  margin: 3px;
+}
+.header .service-menu li.bar {
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  margin: 3px 7px;
+  background-color: #e4e8eb;
+}
+.header .service-menu li.icon-jrnaver {
+  background-position: -285px -267px;
+  width: 60px;
+  height: 10px;
+}
+.header .service-menu li.icon-happybin {
+  background-position: -220px -144px;
+  width: 34px;
+  height: 11px;
+}
