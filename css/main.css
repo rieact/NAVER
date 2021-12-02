@@ -258,8 +258,8 @@ a {
 .header .sub-header .weather-menu li .fine-dust {
   position: relative;
   margin-left: 18px;
-  font-weight: 700;
   padding: 0 0 0 5px;
+  font-weight: 700;
 }
 .header .sub-header .weather-menu li .fine-dust::before {
   content: "";
@@ -294,20 +294,401 @@ a {
 }
 
 /* LEFT SIDE */
-.container .inner .left-side {
+.container .left-side {
   width: 750px;
   margin-right: 30px;
+  float: left;
 }
 
-
-.container .inner .left-side .banner {
+/* BANNER */
+.container .left-side .banner {
   background-image: url(/images/banner.jpg);
   background-size: 750px;
   width: 750px;
   height: 135px;
 }
 
-/* RIGHT SIDE */
-.container .inner .right-side {
-  width: 350px;
+/* NEWSSTAND */
+.container .left-side .newsstand {
+  margin-top: 12px;
 }
+
+/* HEADLINE */
+.container .left-side .newsstand .headline {
+  position: relative;
+  padding: 12px 15px 11px 15px;
+  background-color: #f7f9fa;
+  border: 1px solid #dae1e6;
+  line-height: 24px;
+}
+.container .left-side .newsstand .headline::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .left-side .newsstand .headline .issue-area {
+  float: left;
+}
+.container .left-side .newsstand .headline .issue-area .media-name {
+  float: left;
+  font-size: 13px;
+  font-weight: 700;
+  position: relative;
+  padding-right: 12px;
+}
+.container .left-side .newsstand .headline .issue-area .media-name::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 10px;
+  background-image: url(/images/naver.png);
+  background-size: 444px 439px;
+  background-position: -64px -396px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 7px;
+  right: 0;
+}
+.container .left-side .newsstand .headline .issue-area .media-content {
+  float: left;
+  margin-left: 10px;
+  font-size: 12px;
+}
+.container .left-side .newsstand .headline .direct-area {
+  float: right;
+  font-weight: 700;
+  font-size: 13px;
+}
+.container .left-side .newsstand .headline .direct-area .link-news {
+  color: #3565c9;
+}
+.container .left-side .newsstand .headline .direct-area .link-news::after {
+  content: "";
+  background-color: #c8ccd1;
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  margin-left: 8px;
+  vertical-align: 3px;
+}
+.container .left-side .newsstand .headline .direct-area .link-sort {
+  color: #202020;
+  margin: 2px;
+}
+
+/* TITLE */
+.container .left-side .newsstand .title {
+  padding: 22px 0 16px;
+  font-size: 14px;
+  line-height: 18px;
+}
+.container .left-side .newsstand .title::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .left-side .newsstand .title a.news-stand {
+  float: left;
+  color: #000;
+  font-weight: 700;
+}
+.container .left-side .newsstand .title a.news-stand::before {
+  content: "";
+  display: inline-block;
+  width: 27px;
+  height: 24px;
+  background-image: url(/images/naver.png);
+  background-size: 444px 439px;
+  background-position: 0px -396px;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  margin: -6px 1px 0 0;
+}
+.container .left-side .newsstand .title a.news-stand::after {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 11px;
+  background-image: url(/images/naver.png);
+  background-size: 444px 439px;
+  background-position: -410px -213px;
+  background-repeat: no-repeat;
+  margin-left: 6px;
+  vertical-align: -1px;
+}
+.container .left-side .newsstand .title .sort-area {
+  float: left;
+  margin-left: 8px;
+}
+.container .left-side .newsstand .title .sort-area a {
+  color: #050505;
+}
+.container .left-side .newsstand .title .sort-area .my-sort::after {
+  content: "";
+  background-color: #c7ccd1;
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  margin: 0 4px 0 8px;
+  vertical-align: 3px;
+}
+.container .left-side .newsstand .title .sort-area .sort_on {
+  font-weight: 700;
+}
+.container .left-side .newsstand .title .set-area {
+  float: right;
+}
+.container .left-side .newsstand .title .set-area i {
+  margin: 0 5px;
+}
+.container .left-side .newsstand .title .set-area .icon-list {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 13px;
+  background-image: url(/images/naver.png);
+  background-size: 444px 439px;
+  background-position: -154px -337px;
+  background-repeat: no-repeat;
+  opacity: .7;
+}
+.container .left-side .newsstand .title .set-area .icon-block {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-image: url(/images/naver.png);
+  background-size: 444px 439px;
+  background-position: -185px -337px;
+  background-repeat: no-repeat;
+}
+.container .left-side .newsstand .title .set-area .icon-set {
+  content: "";
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-image: url(/images/naver.png);
+  background-size: 444px 439px;
+  background-position: -47px -396px;
+  background-repeat: no-repeat;
+  opacity: .7;
+}
+
+/* VIEW CONTAINER */
+.container .left-side .newsstand .view-container {
+  position: relative;
+  height: 260px;
+  border: 1px solid #dae1e6;
+}
+.container .left-side .newsstand .frame-area {
+  position: relative;
+}
+.container .left-side .newsstand .frame-area .row i {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #e4e8eb;
+  position: absolute;
+}
+.container .left-side .newsstand .frame-area .row .row1 {
+  top: 65px;
+}
+.container .left-side .newsstand .frame-area .row .row2 {
+  top: 130px;
+}
+.container .left-side .newsstand .frame-area .row .row3 {
+  top: 195px;
+}
+.container .left-side .newsstand .frame-area .col i {
+  display: block;
+  width: 1px;
+  height: 260px;
+  background-color: #e4e8eb;
+  position: absolute;
+}
+.container .left-side .newsstand .frame-area .col .col1 {
+  left: 124px;
+}
+.container .left-side .newsstand .frame-area .col .col2 {
+  left: 248px;
+}
+.container .left-side .newsstand .frame-area .col .col3 {
+  left: 372px;
+}
+.container .left-side .newsstand .frame-area .col .col4 {
+  left: 497px;
+}
+.container .left-side .newsstand .frame-area .col .col5 {
+  left: 622px;
+}
+.container .left-side .newsstand .thumb-area {
+
+}
+.container .left-side .newsstand .thumb-area .thumb-box {
+  position: relative;
+  width: 16.66%;
+  float: left;
+}
+.container .left-side .newsstand .thumb-area .thumb-box a {
+  display: block;
+  height: 65px;
+}
+.container .left-side .newsstand .thumb-area .thumb-box a:hover {
+
+}
+.container .left-side .newsstand .thumb-area .thumb-box a img {
+  height: 20px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.container .left-side .newsstand .view-btn {
+  position: absolute;
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  top: 109px;
+  left: -22px;
+  background-image: url(/images/naver.png);
+  background-size: 444px 439px;
+  background-position: 0px -306px;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+
+
+
+
+/* RIGHT SIDE */
+.container .right-side {
+  width: 350px;
+  float: right;
+}
+
+/* LOGIN */
+.container .right-side .login {
+  box-sizing: border-box;
+  width: 350px;
+  height: 135px;
+  padding: 18px 16px 12px 17px;
+  background-color: #f7f9fa;
+  border: 1px solid #dae1e6;
+}
+.container .right-side .login p {
+  color: grey;
+  font-size: 12px;
+  margin-left: 2px;
+}
+.container .right-side .login .login-btn {
+  display: block;
+  padding: 17px 0;
+  margin-top: 12px;
+  background-color: #19ce60;
+  border: 1px solid #15c654;
+  border-radius: 2px;
+  font-size: 13px;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
+}
+.container .right-side .login .login-btn i {
+  display: inline-block;
+  width: 60px;
+  height: 12px;
+  background-image: url(/images/naver.png);
+  background-size: 444px 439px;
+  background-position: -238px -279px;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  margin-top: 2px 5px 0 0;
+}
+.container .right-side .login .sub-login {
+  margin: 14px 8px 0 4px;
+  font-size: 12px;
+  /* height: 16px; */
+}
+.container .right-side .login .sub-login::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .right-side .login .sub-login .lock {
+  float: left;
+}
+.container .right-side .login .sub-login .lock::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 14px;
+  background-image: url(/images/naver.png);
+  background-size: 444px 439px;
+  background-position: -408px -55px;
+  background-repeat: no-repeat;
+}
+.container .right-side .login .sub-login .lock a {
+  color: #404040;
+}
+.container .right-side .login .sub-login .lock a:first-child::after {
+  content: "";
+  display: inline-block;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  margin: 0 2px 0 5px;
+  vertical-align: 3px;
+  background-color: #d7dce0;
+}
+.container .right-side .login .sub-login .join {
+  float: right;
+  color: #505050;
+}
+.container .right-side .login .sub-login .join::before {
+  content: "";
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  background-image: url(/images/naver.png);
+  background-size: 444px 439px;
+  background-position: -239px -337px;
+  background-repeat: no-repeat;
+  margin: 2px 5px 0 0;
+}
+
+/* ECO AREA */
+.container .right-side .eco-area {
+  margin: 12px 0;
+  border: 1px solid #dae1e6;
+}
+.container .right-side .eco-area .title {
+
+}
+.container .right-side .eco-area .content {
+
+}
+.container .right-side .eco-area .content span {
+
+}
+.container .right-side .eco-area .content .sub-content {
+
+}
+.container .right-side .eco-area .content .sub-content::before {
+
+}
+.container .right-side .eco-area .btn-group {
+
+}
+.container .right-side .eco-area .btn-group .left-btn {
+
+}
+.container .right-side .eco-area .btn-group .right-btn {
+
+}
+
+
+
