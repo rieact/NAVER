@@ -55,6 +55,11 @@ a {
 .blind {
   display: none;
 }
+.ctrl::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 
 body {
   font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
@@ -769,7 +774,7 @@ body::after,
   position: absolute;
   top: 0;
   bottom: 0;
-  right: -20px;
+  right: -15px;
   margin: auto 0;
   display: inline-block;
   width: 40px;
@@ -1292,4 +1297,194 @@ body::after,
 .container .right-side .shop-area .content .pic-area .pic-list ul li .pic-content {
   padding: 2px;
   padding-bottom: 10px;
+}
+
+/* FOOTER */
+.footer {
+  border-top: 1px solid #e4e8eb;
+  background-color: #fafbfc;
+}
+.footer .inner {
+  width: 1130px;
+  margin: 0 auto;
+  padding-bottom: 90px;
+}
+.footer::after,
+.footer .inner::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* BANNER */
+.footer .banner {
+  padding: 24px 0;
+}
+.footer .banner::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.footer .banner ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.footer .banner li {
+  font-size: 13px;
+  float: left;
+}
+.footer .banner li img {
+  float: left;
+  width: 160px;
+}
+.footer .banner li .img-info {
+  float: left;
+  margin: 0 60px 0 15px;
+  overflow: hidden;
+}
+.footer .banner li:last-child .img-info {
+  margin-right: 20px;
+}
+.footer .banner li .img-info .name {
+  font-weight: 700;
+  padding: 3px 0;
+  color: #58c464;
+}
+.footer .banner li .img-info .title {
+  font-weight: 700;
+  padding: 5px 0 8px;
+}
+.footer .banner li .img-info .content {
+  padding: 3px 0;
+}
+
+/* NOTICE */
+.footer .notice {
+  border-top: 1px solid #e4e8eb;
+  padding: 15px 0;
+  font-size: 12px;
+}
+/* .footer .notice::after {
+  content: "";
+  display: block;
+  clear: both;
+} */
+.footer .notice .notice-area {
+  float: left;
+}
+.footer .notice .notice-area .notice-title {
+  float: left;
+  font-weight: 700;
+}
+.footer .notice .notice-area .notice-content {
+  float: left;
+  color: #777;
+  margin-left: 15px;
+}
+.footer .notice .service-area {
+  float: right;
+  font-weight: 700;
+}
+.footer .notice .service-area::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 12px;
+  background-image: url(/images/naver.png);
+  background-size: 444px 439px;
+  background-position: -408px -134px;
+  background-repeat: no-repeat;
+  vertical-align: top;
+  margin-left: 10px;
+  vertical-align: -2px;
+}
+
+/* PARTNER */
+.footer .box-container {
+  border-top: 1px solid #e4e8eb;
+  font-size: 12px;
+}
+.footer .partner {
+  float: left;
+  width: 780px;
+  padding: 20px 0;
+}
+.footer .partner .partner-list {
+  padding: 5px 0;
+}
+.footer .partner .partner-list .title {
+  float: left;
+  font-weight: 700;
+  width: 80px;
+}
+.footer .partner .partner-list .site-link {
+  color: #777;
+}
+.footer .partner .partner-list .site-link+.site-link::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 11px;
+  background-color: #e4e8eb;
+  vertical-align: -1px;
+  margin: 0 8px;
+}
+
+
+/* SERVICE */
+.footer .service {
+  float: right;
+  width: 350px;
+  padding: 28px 0;
+}
+.footer .service .service-box {
+  float: left;
+}
+.footer .service .service-box:last-child {
+  margin-left: 50px;
+}
+.footer .service img {
+  float: right;
+  width: 48px;
+  margin-left: 10px;
+}
+.footer .service .img-content {
+  float: left;
+}
+.footer .service .img-content .name {
+  font-weight: 700;
+  padding-top: 5px;
+}
+.footer .service .img-content .link {
+  padding-top: 5px;
+  color: #777;
+}
+
+/* CORPORATION */
+.footer .corporation {
+  border-top: 1px solid #e4e8eb;
+  font-size: 12px;
+  padding: 25px 0 0;
+}
+.footer .corporation .corp-list,
+.footer .corporation .corp-list li {
+  float: left;
+}
+.footer .corporation .corp-list li {
+  color: #777;
+}
+.footer .corporation .corp-list li+li::before {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 11px;
+  margin: 0 8px;
+  background-color: #e4e8eb;
+  vertical-align: -1px;
+}
+.footer .corporation .corp-mark {
+  float: left;
+  font-weight: 700;
+  margin-left: 15px;
 }
